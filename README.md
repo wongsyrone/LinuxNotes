@@ -6,4 +6,8 @@
 ## Note List
 
 1. setup build environment, including C/C++, GNOME and Java
-2. 
+2. how to compile software from source
+3. how to cross-compile, like ARM platform
+4. how to compile Vi IMproved from source and some VIM settings fitting for programming under vim
+5. how to use GCC and gdb to compile and debug
+6. 
