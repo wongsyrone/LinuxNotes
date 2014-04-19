@@ -11,4 +11,5 @@
 4. how to cross-compile, like ARM platform
 5. how to compile Vi IMproved from source and some VIM settings fitting for programming under vim
 6. how to use GCC and gdb to compile and debug
-7. 
+7. dd.md - - - some usage of "dd" tool
+8. 

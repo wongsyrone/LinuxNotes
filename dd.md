@@ -1,0 +1,46 @@
+# dd 使用
+
+## 使用 dd 拷贝数据，从小分区到大分区
+因为`dd` 是 `扇区对扇区` 的命令，也就是 **原样无脑复制**
+
+    sudo dd if=<SOURCE_BLOCK_FILE> of=<TARGET_BLOCK_FILE> 
+    sudo e2fsck -f <TARGET_BLOCK_FILE>  
+    sudo resize2fs <TARGET_BLOCK_FILE>
+
+然后查看分区状态，应该由 `dirty` 变成 `clean`了 
+
+## 使用 信号 来显示 dd 进度
+
+linux下显示dd命令的进度：
+
+    dd if=/dev/zero of=/tmp/zero.img bs=10M count=100000
+
+想要查看上面的dd命令的执行进度，可以使用下面几种方法：
+比如：每5秒输出dd的进度
+方法一：
+
+    watch -n 5 pkill -USR1 ^dd$
+
+方法二：
+
+    watch -n 5 killall -USR1 dd
+
+方法三：
+
+    while killall -USR1 dd; do sleep 5; done
+
+方法四：
+
+    while (ps auxww |grep " dd " |grep -v grep |awk '{print $2}' |while read pid; do kill -USR1 $pid; done) ; do sleep 5; done
+
+上述四种方法中使用三个命令：`pkill、killall、kill`向 dd 发送`SIGUSR1`信息，dd命令进程接收到信号之后就打印出自己当前的进度。
+
+PS:   发送信号使daemon重新载入configure file
+
+    kill -HUP $pid
+
+## dd 备份的替代方式
+
+    rsync -av  // have an installed Linux instead Live CD
+
+或者寻找 `g4l`  (ghostforlinux) 
