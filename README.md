@@ -9,6 +9,7 @@
 2. setup build environment, including C/C++, GNOME and Java
 3. how to compile software from source
 4. some usage of "dd" tool
-5. how to cross-compile, like ARM platform
-6. how to use GCC and gdb to compile and debug
-7. 
+5. dnscrypt-proxy and dnsmasq configuration
+6. how to cross-compile, like ARM platform
+7. how to use GCC and gdb to compile and debug
+8. 
