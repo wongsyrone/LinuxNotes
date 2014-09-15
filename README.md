@@ -10,6 +10,7 @@
 3. [how to compile software from source](https://github.com/wongsyrone/LinuxNotes/blob/master/03.md)
 4. [partial usage of "dd" tool](https://github.com/wongsyrone/LinuxNotes/blob/master/04.md)
 5. [dnscrypt-proxy and dnsmasq instructions](https://github.com/wongsyrone/LinuxNotes/blob/master/05.md)
-6. how to cross-compile, like in ARM platform    ... to be added
-7. how to use GCC and gdb to compile and debug   ... to be added
-8. 
+6. [OpenWRT configure and compile](https://github.com/wongsyrone/LinuxNotes/blob/master/06.md)
+7. how to cross-compile, like in ARM platform    ... to be added
+8. how to use GCC and gdb to compile and debug   ... to be added
+9. 
