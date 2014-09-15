@@ -1,6 +1,6 @@
 # LinuxNotes
 
-#### I will put some notes in this repository, including How-tos and some tutorials attach to GNU/Linux, especially Ubuntu LTS version.  Now I am working on Ubuntu 12.04 LTS x64
+#### I will put some notes in this repository, including How-tos and some tutorials about GNU/Linux, especially for Ubuntu LTS version.  Now I am working on Ubuntu 14.04.1 LTS x64
 
 #### I will use Markdown file to discribe the procedures.
 ## Note List
